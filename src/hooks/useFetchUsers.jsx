@@ -28,7 +28,7 @@ const useFetchUsers = () => {
                 }, 500); //I've done this so you cna see the spinner is working otherwise it loads for a spilt seccond
             }
         };
-        console.log(error)
+        console.log(users)
         fetchData();
     }, []);
 
