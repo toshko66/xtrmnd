@@ -14,7 +14,7 @@ const useFetchUsers = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://jsonplaceholder.typicode.com/users');
+                const response = await fetch('https://jsonplaceholder.typicode.com/users'); //remove the 's' in 'users' to check the error state.
                 if (!response.ok) {
                     throw new Error('Error with fetching Data');
                 }
@@ -23,14 +23,17 @@ const useFetchUsers = () => {
             } catch (error) {
                 setError(error);
             } finally {
-                setLoading(false);
+                setTimeout(() => {
+                    setLoading(false);
+                }, 500);
             }
         };
-
+        console.log(error)
         fetchData();
     }, []);
 
     return { users, loading, error };
+   
 };
 
 export default useFetchUsers;
