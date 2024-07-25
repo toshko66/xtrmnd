@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family:'Ubuntu';
+  src: url(./assets/fonts/Ubuntu-Light.ttf) ;
+}
+
+
+@font-face {
+  font-family:'UbuntuReg';
+  src: url(./assets/fonts/Ubuntu-Light.ttf) ;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -7,7 +7,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
                 placeholder="Search users..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="p-2 border border-gray-300 rounded-lg w-full"
+                className="p-2 border border-gray-white rounded-lg w-full"
             />
         </div>
     );
