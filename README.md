@@ -5,6 +5,11 @@ XTRMND
 ## React Vite App with Docker
 This project is a React Vite application that fetches user data from an API endpoint and displays it as cards. The fetching, error handling, and loading state management are handled by a custom hook /useFetchUsers. The development and production environments are containerized using Docker to ensure consistency across different environments.
 
+
+### Possible Improvements.
+
+Although React was used, I believe Vue might be a more suitable, lightweight framework for a project of this nature and scale.
+
 #### Run the app **Local Development**
 
 1. git clone https://github.com/toshko66/xtrmnd
