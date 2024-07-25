@@ -10,6 +10,40 @@ This project is a React Vite application that fetches user data from an API endp
 
 Although React was used, I believe Vue might be a more suitable, lightweight framework for a project of this nature and scale.
 
+Also soemthing I could to to implment TypeScript is to add:
+
+```javascript
+interface User {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    address: {
+        street: string;
+        suite: string;
+        city: string;
+        zipcode: string;
+        geo: {
+            lat: string;
+            lng: string;
+        };
+    };
+    phone: string;
+    website: string;
+    company: {
+        name: string;
+        catchPhrase: string;
+        bs: string;
+    };
+}
+
+interface UseFetchUsersResult {
+    users: User[];
+    loading: boolean;
+    error: Error | null;
+}
+```
+
 #### Run the app **Local Development**
 
 1. git clone https://github.com/toshko66/xtrmnd
